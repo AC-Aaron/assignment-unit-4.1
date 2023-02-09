@@ -77,8 +77,25 @@ function getLast( array ) {
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
+  let i = 0; 
   
+    while(i<array.length ){
+      
+      if (value ===array[i]){
+        
+        return true;
+      
+      } 
+      i++;
+   } return false;
+  
+   
 }
+
+let array1 = [24, 7, 30, 12, 365, 0];
+
+console.log('Looking for element in array',find(24, array1));
+
 
 // ----------------------
 // Stretch Goals
